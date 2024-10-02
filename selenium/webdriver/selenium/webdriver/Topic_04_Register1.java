@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Topic_04_Register {
+public class Topic_04_Register1 {
     WebDriver driver;
 
     @BeforeClass
@@ -86,8 +86,8 @@ public class Topic_04_Register {
         driver.findElement(By.id("txtFirstname")).sendKeys("Nguyen Thi Thuy");
         driver.findElement(By.id("txtEmail")).sendKeys("abca@gmail.com");
         driver.findElement(By.id("txtCEmail")).sendKeys("abca@gmail.com");
-        driver.findElement(By.id("txtPassword")).sendKeys("abc123");");
-        driver.findElement(By.id("txtCPassword")).sendKeys("abc123");");
+        driver.findElement(By.id("txtPassword")).sendKeys("abc123");
+        driver.findElement(By.id("txtCPassword")).sendKeys("abc123");
         driver.findElement(By.id("txtPhone")).sendKeys("0837474");
         driver.findElement(By.xpath("//div[@class='form frmRegister']//button[text()='ĐĂNG KÝ']")).click();
         Assert.assertEquals(driver.findElement(By.id("txtPhone-error")).getText(),"Số điện thoại phải từ 10-11 số.");
