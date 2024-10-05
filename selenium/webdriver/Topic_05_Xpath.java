@@ -48,7 +48,7 @@ public class Topic_05_Xpath {
 
     @Test
     public void TC_03() {
-        driver.get("https://automationfc.github.io/basic-form/");
+        driver.get("https://automationfc.github.io/jquery-selectable/");
         //position()
         driver.findElement(By.xpath("//ol[@id='selectable']/li[position()='1']"));
         //index

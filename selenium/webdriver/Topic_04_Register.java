@@ -10,13 +10,13 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 
-public class Topic_04_Register1 {
+public class Topic_04_Register {
     WebDriver driver;
 
     @BeforeClass
     public void beforeClass() {
         driver = new ChromeDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(150));
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         driver.get("https://alada.vn/tai-khoan/dang-ky.html");
     }
   
