@@ -34,7 +34,7 @@ public class Topic_05_Xpath {
         driver.findElement(By.xpath("//p[not(contains(text(),'tài khoản mới'))]"));
         //and or
         driver.findElement(By.xpath("//p[contains(text(),'tài khoản mới') or contains(text(),'ký') ] "));
-        driver.quit();
+//        driver.quit();
 
     }
 
@@ -43,7 +43,7 @@ public class Topic_05_Xpath {
         driver.get("https://automationfc.github.io/basic-form/");
         //concat()
         driver.findElement(By.xpath("//span[text()=concat('Hello \"John\"',\", What's happened?\")]"));
-        driver.quit();
+//        driver.quit();
     }
 
     @Test
@@ -59,11 +59,11 @@ public class Topic_05_Xpath {
         driver.findElement(By.xpath("//ol[@id='selectable']/li[last()-1]"));
         driver.findElement(By.xpath("//ol[@id='selectable']/li[count(//li)-1]"));
 
-        driver.quit();
+//        driver.quit();
     }
 
 //    @AfterClass
-//    public void afterClass() {
-//        driver.quit();
-//    }
+    public void afterClass() {
+        driver.quit();
+    }
 }
