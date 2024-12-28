@@ -113,7 +113,6 @@ public class Topic_16_Alert {
     public void TC_06() throws InterruptedException {
         String username = "admin";
         String password = "admin";
-        // Cách 1: Truyền thăng U/ P vào trong URL
         driver.get("http://" + username + ":" + password + "@" + "the-internet.herokuapp.com/basic_auth");
         Assert.assertEquals(driver.findElement(By.cssSelector("div.example>p")).getText(), "Congratulations! You must have the proper credentials.");
 
