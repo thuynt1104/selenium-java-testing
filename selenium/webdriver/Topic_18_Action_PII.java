@@ -114,7 +114,6 @@ public class Topic_18_Action_PII {
         //right click
         action.contextClick(driver.findElement(By.cssSelector("span.context-menu-one"))).pause(Duration.ofSeconds(3)).perform();
         Assert.assertTrue(driver.findElement(By.cssSelector("li.context-menu-icon-quit")).isDisplayed());
-
         //hover vao quit
         action.moveToElement(driver.findElement(By.cssSelector("li.context-menu-icon-quit"))).pause(Duration.ofSeconds(1)).perform();
         //verify hover quit

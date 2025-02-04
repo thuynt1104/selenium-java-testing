@@ -62,7 +62,6 @@ public class Topic_17_Action_PI {
         Assert.assertEquals(driver. findElement(By.cssSelector("ol.breadcrumb strong")) .getText(), "GỌT BÚT CHÌ");
     }
 
-
     @AfterClass
     public void afterClass() {
         driver.quit();
