@@ -2,7 +2,6 @@ package webdriver;
 
 import org.openqa.selenium.*;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
@@ -13,7 +12,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Topic_18_Action_PII {
+public class Topic_17_Action_PII {
     WebDriver driver;
     Actions action;
 
