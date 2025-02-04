@@ -44,7 +44,7 @@ public class Topic_17_Action_PI {
     }
 
     @Test
-    public void TC_02() {
+    public void TC_02_Myntra() {
         driver.get ("https://www.myntra.com/");
         action.moveToElement(driver.findElement(By.xpath("//div[@class='desktop-navLink']/a[text()='Kids']"))).pause(Duration.ofSeconds(2)).perform();
         action.click(driver.findElement(By.xpath( "//div[@class='desktop-navLink']//a[text()='Home & Bath']"))).perform();
@@ -61,6 +61,7 @@ public class Topic_17_Action_PI {
         action.click(driver.findElement(By.xpath("//div[contains(@class,'fhs_menu_content')]//a[text()='Gọt Bút Chì']"))).perform ();
         Assert.assertEquals(driver. findElement(By.cssSelector("ol.breadcrumb strong")) .getText(), "GỌT BÚT CHÌ");
     }
+
 
     @AfterClass
     public void afterClass() {
