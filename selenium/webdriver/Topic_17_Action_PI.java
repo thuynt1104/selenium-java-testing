@@ -62,6 +62,12 @@ public class Topic_17_Action_PI {
         Assert.assertEquals(driver. findElement(By.cssSelector("ol.breadcrumb strong")) .getText(), "GỌT BÚT CHÌ");
     }
 
+    @Test
+    public void TC_03_Click() throws InterruptedException {
+        driver.get("https://automationfc.github.io/jquery-selectable/");
+
+    }
+
     @AfterClass
     public void afterClass() {
         driver.quit();
