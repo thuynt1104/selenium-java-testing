@@ -56,8 +56,8 @@ public class Topic_17_Action_PII {
         List<String> actualNumbers = new ArrayList<String>();
         actualNumbers.add("3");
         actualNumbers.add("6");
-        actualNumbers.add("7");
         actualNumbers.add("12");
+        actualNumbers.add("7");
         actualNumbers.add("14");
         actualNumbers.add("20");
 
@@ -77,15 +77,18 @@ public class Topic_17_Action_PII {
 //                .pause(Duration.ofSeconds(2)).perform();
         for( String number : actualNumbers ) {
             action.click(numbers.get(Integer.parseInt(number) - 1 ));
+            System.out.println(number);
         }
         action.keyUp(keys).perform();
         List<WebElement> numbersSelected = driver.findElements(By.cssSelector("ol#selectable>li.ui-selected"));
         Assert.assertEquals(numbersSelected.size(), 6);
 
+
         //Expected Number
         List<String> expectedNumbers = new ArrayList<String>();
         for(WebElement number : numbersSelected) {
             expectedNumbers.add(number.getText());
+            System.out.println(number.getText());
         }
         Assert.assertEquals(actualNumbers, expectedNumbers);
     }
@@ -129,6 +132,6 @@ public class Topic_17_Action_PII {
 
     @AfterClass
     public void afterClass() {
-        driver.quit();
+//        driver.quit();
     }
 }
