@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Web UI Automation Testing" verbose="1" parallel="tests" thread-count="3">
+    <parameter name="environmentName" value="Prod"/>
+<!--    <parameter name="platformName" value="Mac"/>-->
+    <test name="Run on FireFox">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="version" value="137"/>
+        <classes>
+            <class name="platformWeb.Topic_01_User"/>
+            <class name="platformWeb.Topic_02_Product"/>
+        </classes>
+    </test>
+</suite>

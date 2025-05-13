@@ -11,5 +11,6 @@
     <orderEntry type="library" name="testng-7.10.2" level="project" />
     <orderEntry type="library" name="selenium-server-4.24.0" level="project" />
     <orderEntry type="library" name="selenium-server-4.32.0" level="project" />
+    <orderEntry type="library" name="commons-io-2.19.0" level="project" />
   </component>
 </module>

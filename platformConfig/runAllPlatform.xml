@@ -1,0 +1,8 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Web UI Automation Testing" verbose="1" parallel="tests" thread-count="3">
+   <suite-files>
+       <suite-file path="runOnMobilePlatform.xml"></suite-file>
+       <suite-file path="runOnWebPlatform.xml"></suite-file>
+   </suite-files>
+</suite>

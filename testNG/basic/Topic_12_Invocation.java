@@ -1,4 +1,5 @@
 package basic;
+import listeners.ReportNGListeners;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -18,6 +19,7 @@ import java.util.Random;
 
 import org.testng.annotations.*;
 
+@Listeners(ReportNGListeners.class)
 public class Topic_12_Invocation {
 
     WebDriver driver;
@@ -54,7 +56,6 @@ public class Topic_12_Invocation {
         password = "123456789";
 
         String path = projectPath + "/dataTest/user.properties";
-        System.out.println(path);
         outputStrem = new FileOutputStream(path);
     }
 
@@ -109,5 +110,9 @@ public class Topic_12_Invocation {
     public void afterClass() throws IOException {
         outputStrem.flush();
         driver.quit();
+    }
+
+    public WebDriver getDriver() {
+        return driver;
     }
 }
